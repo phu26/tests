@@ -307,6 +307,7 @@ export default function Home() {
                                     <p>
                                     My team and I share our trades through the social copy trading platform <span style={{color: '#facc15', fontWeight: 'bold'}}>Exness</span>
                                     </p>
+                                
                                 </div>
                               </div>
                             </div>
@@ -363,6 +364,7 @@ export default function Home() {
                 
                   <div className="fusion-title title fusion-title-6 fusion-sep-none fusion-title-text fusion-title-size-three" style={{ "--awb-text-color": "var(--awb-color1)" } as React.CSSProperties}>
                     <h3 className="fusion-title-heading title-heading-left fusion-responsive-typography-calculated" style={{ margin: 0, "--fontSize": 24, lineHeight: "var(--awb-typography1-line-height)" } as React.CSSProperties}>Exness</h3>
+                        <span>Social Trading</span>
                   </div>
                   <div className="fusion-builder-row fusion-builder-row-inner fusion-row fusion-flex-align-items-flex-start fusion-flex-content-wrap" style={{ width: "104% !important", maxWidth: "104% !important", marginLeft: "calc(-4% / 2 )", marginRight: "calc(-4% / 2 )" } as React.CSSProperties}>
               
