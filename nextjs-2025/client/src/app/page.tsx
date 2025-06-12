@@ -510,15 +510,65 @@ export default function Home() {
                       <div style={{paddingTop:'10px',backgroundColor: "#1e2329"}} className="fusion-column-wrapper fusion-column-has-shadow fusion-flex-justify-content-flex-start fusion-content-layout-column">
                                <div className="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root hLanG css-bovk7b" data-auto="strategy_detail_card">
   
-                               <div className="gs5fU gBc_5" style={{borderRadius:'10px'}}>
-       
-       <Image 
+                              {isMobile ? (
+     <div className="gs5fU gBc_5" style={{borderRadius:'10px'}}>
+                               <Dialog>
+  <DialogTrigger> <Image 
+       src="/picmobile02.png"  
+       width={500}
+       height={100}
+       alt="Photo"
+        data-auto="strategy_image" className=""/></DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+    <VisuallyHidden.Root>
+    <DialogTitle></DialogTitle>
+    </VisuallyHidden.Root>
+     
+      <DialogDescription >
+      <Image 
+       src="/picmobile02.png"  
+       width={500}
+       height={500}
+       style={{width:"-webkit-fill-available"}}
+       alt="Photo"
+        data-auto="strategy_image" className=""/>
+      </DialogDescription>
+    </DialogHeader>
+  </DialogContent>
+</Dialog>
+      
+     </div>
+  ):(
+ <div className="gs5fU gBc_5" style={{borderRadius:'10px'}}>
+                               <Dialog>
+  <DialogTrigger> <Image 
        src="/image02.jpg"  
        width={500}
        height={100}
        alt="Photo"
+        data-auto="strategy_image" className=""/></DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+    <VisuallyHidden.Root>
+    <DialogTitle></DialogTitle>
+    </VisuallyHidden.Root>
+     
+      <DialogDescription >
+      <Image 
+       src="/image02.jpg"  
+       width={500}
+       height={500}
+       style={{width:"-webkit-fill-available"}}
+       alt="Photo"
         data-auto="strategy_image" className=""/>
+      </DialogDescription>
+    </DialogHeader>
+  </DialogContent>
+</Dialog>
+      
      </div>
+  )}
 </div>
                         <div className="fusion-title title fusion-title-7 fusion-sep-none fusion-title-center fusion-title-text fusion-title-size-three" style={{ "--awb-text-color": "var(--awb-color1)" } as React.CSSProperties}>
                           <h3 className="fusion-title-heading title-heading-center fusion-responsive-typography-calculated" style={{ margin: 0, "--fontSize": 24, lineHeight: "var(--awb-typography1-line-height)" } as React.CSSProperties}>Exness - TPGROUP_01</h3>
