@@ -91,7 +91,7 @@ setIsVietnam(false);
         
             {isVietnam ? (
               <li id="menu-item-824" className="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-824 fusion-dropdown-menu" data-classNamees="pll-parent-menu-item" data-item-id="824" style={{overflow: 'visible'}}>
-                <Link href={'/'} className="fusion-background-highlight" aria-haspopup="true" >
+                <Link href={'/vnhome'} className="fusion-background-highlight" aria-haspopup="true" >
                   <span className="menu-text">
                     <Image style={{ display: 'inline-block', marginLeft: '0.3em' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="" width="16" height="11"/>
                     <span style={{ marginLeft: '0.3em' }}>Tiếng Việt</span>
@@ -102,7 +102,7 @@ setIsVietnam(false);
                 </Link>
                 <ul className="sub-menu fusion-switched-side" style={{ left: '-39.359px' }}>
                   <li onClick={e => { e.preventDefault(); toggleLanguage(); }} id="menu-item-824-en" className="lang-item lang-item-11 lang-item-en lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-824-en fusion-dropdown-submenu" data-classNamees="lang-item">
-                    <Link href={'/ushome'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US" >
+                    <Link href={'/'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US" >
                       <span >
                         <Image style={{ display: 'inline-block', marginLeft: '0.3em' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="" width="16" height="11" />
                         <span style={{marginLeft:'0.3em'}}>English</span>
@@ -113,7 +113,7 @@ setIsVietnam(false);
               </li>
             ) : (
               <li id="menu-item-19" className="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-824 fusion-dropdown-menu" data-classNamees="pll-parent-menu-item" data-item-id="824" style={{overflow: 'visible'}}>
-                <Link href={'/ushome'} className="fusion-background-highlight" aria-haspopup="true" >
+                <Link href={'/'} className="fusion-background-highlight" aria-haspopup="true" >
                   <span>
                     <Image style={{ display: 'inline-block', marginLeft: '0.3em' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="" width="16" height="11" />
                     <span style={{marginLeft:'0.3em'}}>English</span>
@@ -124,7 +124,7 @@ setIsVietnam(false);
                 </Link>
                 <ul className="sub-menu fusion-switched-side" style={{ left: '-39.359px' }}>
                   <li onClick={e => { e.preventDefault(); toggleLanguage(); }} id="menu-item-824-en" className="lang-item lang-item-11 lang-item-en lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-824-en fusion-dropdown-submenu" data-classNamees="lang-item">
-                    <Link href={'/'} className="fusion-background-highlight" hrefLang="vi" lang="vi" >
+                    <Link href={'/vnhome'} className="fusion-background-highlight" hrefLang="vi" lang="vi" >
                       <span className="menu-text">
                         <Image  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="" width="16" height="11" style={{ display: 'inline-block', marginLeft: '0.3em' }}/>
                         <span style={{ marginLeft: '0.3em' }}>Tiếng Việt</span>
@@ -172,7 +172,7 @@ setIsVietnam(false);
            
             {isVietnam ? (
               <li id='824' className="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-824 fusion-dropdown-menu" data-classNamees="pll-parent-menu-item" data-item-id="824">
-                <Link href={'/'} className="fusion-background-highlight" aria-haspopup="true">
+                <Link href={'/vnhome'} className="fusion-background-highlight" aria-haspopup="true">
                   <span className="menu-text">
                     <Image style={{ display: 'inline-block', marginLeft: '0.3em' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="" width="16" height="11" />
                     <span style={{marginLeft:'0.3em'}}>Tiếng Việt</span>
@@ -183,7 +183,7 @@ setIsVietnam(false);
                 </Link>
                 <ul className="sub-menu">
                   <li onClick={e => { e.preventDefault(); toggleLanguage(); }} className="lang-item lang-item-11 lang-item-en lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-824-en fusion-dropdown-submenu" data-classNamees="lang-item">
-                    <Link href={'/ushome'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
+                    <Link href={'/'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
                       <span>
                         <Image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="" width="16" height="11" style={{ display: 'inline-block', marginLeft: '0.3em' }}/>
                         <span style={{marginLeft:'0.3em'}}>English</span>
@@ -194,7 +194,7 @@ setIsVietnam(false);
               </li>
             ) : (
               <li id='19' className="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-824 fusion-dropdown-menu" data-classNamees="pll-parent-menu-item" data-item-id="19">
-                <Link href={'/ushome'} className="fusion-background-highlight" aria-haspopup="true">
+                <Link href={'/'} className="fusion-background-highlight" aria-haspopup="true">
                   <span className="menu-text">
                     <Image style={{ display: 'inline-block', marginLeft: '0.3em' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="" width="16" height="11" />
                     <span style={{marginLeft:'0.3em'}}>English</span>
@@ -205,7 +205,7 @@ setIsVietnam(false);
                 </Link>
                 <ul className="sub-menu">
                   <li onClick={e => { e.preventDefault(); toggleLanguage(); }} className="lang-item lang-item-11 lang-item-en lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-824-en fusion-dropdown-submenu" data-classNamees="lang-item">
-                    <Link href={'/'} className="fusion-background-highlight" hrefLang="vi" lang="vi">
+                    <Link href={'/vnhome'} className="fusion-background-highlight" hrefLang="vi" lang="vi">
                       <span>
                         <Image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="" width="16" height="11" style={{ display: 'inline-block', marginLeft: '0.3em' }}/>
                         <span style={{marginLeft:'0.3em'}}>Tiếng Việt</span>
@@ -234,7 +234,7 @@ setIsVietnam(false);
          
            
             <li id='mobile-824' className="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-824 fusion-dropdown-menu" data-classNamees="pll-parent-menu-item" data-item-id="824">
-              <Link href={'/'} className="fusion-background-highlight">
+              <Link href={'/vnhome'} className="fusion-background-highlight">
                 <span className="menu-text">
                   <Image style={{ display: 'inline-block', marginLeft: '0.3em' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="" width="16" height="11"/>
                   <span style={{marginLeft:'0.3em'}}>Tiếng Việt</span>
@@ -248,7 +248,7 @@ setIsVietnam(false);
                   e => { e.preventDefault(); toggleLanguage(); }
 
                 } className="lang-item lang-item-11 lang-item-en lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-824-en fusion-dropdown-submenu" data-classNamees="lang-item">
-                  <Link href={'/ushome'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
+                  <Link href={'/'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
                     <span>
                       <Image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="" width="16" height="11" style={{ display: 'inline-block', marginLeft: '0.3em' }}/>
                       <span style={{marginLeft:'0.3em'}}>English</span>
@@ -260,7 +260,7 @@ setIsVietnam(false);
             </li>
             {!isVietnam && (
               <li id='mobile-19' className="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-824 fusion-dropdown-menu" data-classNamees="pll-parent-menu-item" data-item-id="824">
-                <Link href={'/ushome'} className="fusion-background-highlight">
+                <Link href={'/'} className="fusion-background-highlight">
                   <span className="menu-text">
                     <Image style={{ display: 'inline-block', marginLeft: '0.3em' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="" width="16" height="11" />
                     <span style={{marginLeft:'0.3em'}}>English</span>
@@ -271,7 +271,7 @@ setIsVietnam(false);
                 </Link>
                 <ul className="sub-menu">
                   <li onClick={e => { e.preventDefault(); toggleLanguage(); }} className="lang-item lang-item-11 lang-item-en lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-824-en fusion-dropdown-submenu" data-classNamees="lang-item">
-                    <Link href={'/'} className="fusion-background-highlight" hrefLang="vi" lang="vi">
+                    <Link href={'/vnhome'} className="fusion-background-highlight" hrefLang="vi" lang="vi">
                       <span>
                         <Image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="" width="16" height="11" style={{ display: 'inline-block', marginLeft: '0.3em' }}/>
                         <span style={{marginLeft:'0.3em'}}>Tiếng Việt</span>
@@ -317,7 +317,7 @@ setIsVietnam(false);
             
              {isVietnam ?(
 <li id='mb-824' className="fusion-mobile-nav-item pll-parent-menu-item menu-item-has-children" data-classNamees="pll-parent-menu-item" data-item-id="824" >
-              <Link href={'/'} className="fusion-background-highlight">
+              <Link href={'/vnhome'} className="fusion-background-highlight">
           <span className="menu-text">
             <Image style={{ display: 'inline-block', marginLeft: '0.3em' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="" width="16" height="11" />
             <span style={{marginLeft:'0.3em'}}>Tiếng Việt</span>
@@ -331,7 +331,7 @@ setIsVietnam(false);
               <li onClick={
 e => { e.preventDefault(); toggleLanguage(); }
               } className="fusion-mobile-nav-item lang-item" data-classNamees="lang-item" >
-              <Link href={'/ushome'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
+              <Link href={'/'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
                 <span>
                 <Image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="" width="16" height="11" style={{ display: 'inline-block', marginLeft: '0.3em' }}/>
                 <span style={{marginLeft:'0.3em'}}>English</span>
@@ -343,7 +343,7 @@ e => { e.preventDefault(); toggleLanguage(); }
             </li>
              ):(
    <li id="mb-19" className="fusion-mobile-nav-item pll-parent-menu-item menu-item-has-children" data-classNamees="pll-parent-menu-item" data-item-id="824" >
-              <Link href={'/ushome'} className="fusion-background-highlight">
+              <Link href={'/'} className="fusion-background-highlight">
           <span className="menu-text">
           
              <Image style={{ display: 'inline-block', marginLeft: '0.3em' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="" width="16" height="11" />
@@ -359,7 +359,7 @@ e => { e.preventDefault(); toggleLanguage(); }
                onClick={
                 e => { e.preventDefault(); toggleLanguage(); }
                }  className="fusion-mobile-nav-item lang-item" data-classNamees="lang-item" >
-              <Link href={'/'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
+              <Link href={'/vnhome'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
                 <span>
                  <Image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="" width="16" height="11" style={{ display: 'inline-block', marginLeft: '0.3em' }}/>
             <span style={{marginLeft:'0.3em'}}>Tiếng Việt</span>
@@ -393,7 +393,7 @@ e => { e.preventDefault(); toggleLanguage(); }
             {
               isVietnam ?(
   <li id='mb-824' className="fusion-mobile-nav-item pll-parent-menu-item" data-classNamees="pll-parent-menu-item" data-item-id="824" >
-              <Link href={'/'} className="fusion-background-highlight">
+              <Link href={'/vnhome'} className="fusion-background-highlight">
                 <span className="menu-text">
                   <Image style={{ display: 'inline-block', marginLeft: '0.3em' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="" width="16" height="11" />
                   <span style={{marginLeft:'0.3em'}}>Tiếng Việt</span>
@@ -405,7 +405,7 @@ e => { e.preventDefault(); toggleLanguage(); }
               <button  aria-label="Open submenu of " aria-expanded="false" className="fusion-open-submenu"></button>
               <ul className="sub-menu" style={{display: 'none'}}>
                 <li className="fusion-mobile-nav-item lang-item" data-classNamees="lang-item" >
-                  <Link href={'/ushome'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
+                  <Link href={'/'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
                     <span>
                       <Image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="" width="16" height="11" style={{ display: 'inline-block', marginLeft: '0.3em' }}/>
                       <span style={{marginLeft:'0.3em'}}>English</span>
@@ -417,7 +417,7 @@ e => { e.preventDefault(); toggleLanguage(); }
             </li>
               ):(
                  <li id='mb-19' className="fusion-mobile-nav-item pll-parent-menu-item" data-classNamees="pll-parent-menu-item" data-item-id="824" >
-              <Link href={'/ushome'} className="fusion-background-highlight">
+              <Link href={'/'} className="fusion-background-highlight">
                 <span className="menu-text">
                     <Image style={{ display: 'inline-block', marginLeft: '0.3em' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="" width="16" height="11" />
                       <span style={{marginLeft:'0.3em'}}>English</span>
@@ -429,7 +429,7 @@ e => { e.preventDefault(); toggleLanguage(); }
               <button  aria-label="Open submenu of " aria-expanded="false" className="fusion-open-submenu"></button>
               <ul className="sub-menu" style={{display: 'none'}}>
                 <li className="fusion-mobile-nav-item lang-item" data-classNamees="lang-item" >
-                  <Link href={'/'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
+                  <Link href={'/vnhome'} className="fusion-background-highlight" hrefLang="en-US" lang="en-US">
                     <span>
                     
                        <Image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="" width="16" height="11" style={{ display: 'inline-block', marginLeft: '0.3em' }}/>

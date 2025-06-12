@@ -1,8 +1,6 @@
 'use client'
 import Image from "next/image";
 
-import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
-import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 import {
   Dialog,
   DialogContent,
@@ -13,26 +11,25 @@ import {
 } from "@/components/ui/dialog"
 import { VisuallyHidden } from "radix-ui";
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-import React from "react";
-
+import React, { useEffect } from "react";
+import useWindowDimensions from "@/components/resize/windowDemensions";
 
 export default function Home() {
-  const [isOpen, setIsOpen] = React.useState(false);
-    const [isOpen2, setIsOpen2] = React.useState(false);
-    const [isOpen3, setIsOpen3] = React.useState(false);
   
-    const toggleAccordion = () => {
-     
-      setIsOpen(!isOpen);
-    };
-     const toggleAccordion2 = () => {
-     
-      setIsOpen2(!isOpen2);
-    };
-     const toggleAccordion3 = () => {
+  
+   const [isMobile, setIsMobile] = React.useState(false);
+  
+    const { width, height } = useWindowDimensions();
+   useEffect(() => {
  
-      setIsOpen3(!isOpen3);
-    };
+   
+    if (typeof width === "number" && width < 768) {
+      setIsMobile(true);
+      
+    }else{
+         setIsMobile(false);
+    }
+   },[width, height]);
   return (
     <div id="boxed-wrapper">
       <main id="main" className="clearfix width-100">
@@ -253,7 +250,7 @@ export default function Home() {
                       className="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-7 fusion_builder_column_inner_1_2 1_2 fusion-flex-column"
     style={{
         "--awb-bg-size": "cover",
-        "--awb-width-large": "50%",
+       
         "--awb-margin-top-large": "0px",
         "--awb-spacing-right-large": "3.84%",
         "--awb-margin-bottom-large": "20px",
@@ -297,36 +294,10 @@ export default function Home() {
                         <div className="accordian fusion-accordian" >
                           <div className="panel-group fusion-toggle-icon-boxed" id="accordion-497-2">
                             <div className="fusion-panel panel-default panel-98dbe2d8f7a3fb590 fusion-toggle-no-divider fusion-toggle-boxed-mode">
-                              <div className="panel-heading">
-                                <h3 className="panel-title toggle fusion-responsive-typography-calculated" id="toggle_98dbe2d8f7a3fb590" data-fontsize="18" data-lineheight="21.6px" style={{fontSize: '18', lineHeight: '1.2'}}>
-                                  <a
-                                    className={isOpen ? "active" : "collapsed"}
-                                    aria-expanded={isOpen ? "false" : "true"}
-                                    aria-controls="98dbe2d8f7a3fb590"
-                                    role="button"
-                                    data-toggle="collapse"
-                                    data-parent="#accordion-497-2"
-                                    data-target="#98dbe2d8f7a3fb590"
-                                    href="#98dbe2d8f7a3fb590"
-                                    onClick={e => {
-                                      e.preventDefault();
-                                    toggleAccordion();
-                                    }}
-                                  >
-                                    <span className="fusion-toggle-icon-wrapper" aria-hidden="true">
-                                      <KeyboardArrowDownRoundedIcon  className="fa-fusion-box active-icon fa-angle-down fas" />
-                                       <KeyboardArrowRightRoundedIcon  className="fa-fusion-box inactive-icon fa-angle-right fas" />
-                                     
-                                    </span>
-                                    <span className="fusion-toggle-heading">
-                                      What is TPGROUP?
-                                    </span>
-                                  </a>
-                                </h3>
-                              </div>
+                             
                               <div
                                 id="98dbe2d8f7a3fb590"
-                                className={`panel-collapse collapse${isOpen ? " in" : " "}`}
+                                className={`panel-collapse collapse in`}
                                 aria-labelledby="toggle_98dbe2d8f7a3fb590"
                               >
                                 <div className="panel-body toggle-content fusion-clearfix">
@@ -340,27 +311,8 @@ export default function Home() {
                               </div>
                             </div>
                             <div className="fusion-panel panel-default panel-ffbc17330913c97ce fusion-toggle-no-divider fusion-toggle-boxed-mode">
-                              <div className="panel-heading">
-                                <h3 className="panel-title toggle fusion-responsive-typography-calculated" id="toggle_ffbc17330913c97ce" data-fontsize="18" data-lineheight="21.6px" style={{fontSize: '18', lineHeight: '1.2'}}>
-                                  <a  className={isOpen2 ? "active" : "collapsed"}
-                                    aria-expanded={isOpen2 ? "false" : "true"}
-                                    onClick={e => {
-                                      e.preventDefault();
-                                    toggleAccordion2();
-                                    }}
-                                    aria-controls="ffbc17330913c97ce" role="button" data-toggle="collapse" data-parent="#accordion-497-2" data-target="#ffbc17330913c97ce" href="#ffbc17330913c97ce">
-                                    <span className="fusion-toggle-icon-wrapper" aria-hidden="true">
-                                      <KeyboardArrowDownRoundedIcon  className="fa-fusion-box active-icon fa-angle-down fas" />
-                                       <KeyboardArrowRightRoundedIcon  className="fa-fusion-box inactive-icon fa-angle-right fas" />
-                                     
-                                    </span>
-                                    <span className="fusion-toggle-heading">
-                                      Why choose TPGROUP
-                                    </span>
-                                  </a>
-                                </h3>
-                              </div>
-                              <div id="ffbc17330913c97ce" className={`panel-collapse collapse${isOpen2 ? " in" : " "}`} aria-labelledby="toggle_ffbc17330913c97ce">
+                             
+                              <div id="ffbc17330913c97ce" className={`panel-collapse collapse in  `} aria-labelledby="toggle_ffbc17330913c97ce">
                                 <div className="panel-body toggle-content fusion-clearfix">
                                   <p>
                                     Every trade carries risk, so we trade each strategy separately and do not copy trades from multiple strategies at the same time.
@@ -371,28 +323,8 @@ export default function Home() {
                               </div>
                             </div>
                             <div className="fusion-panel panel-default panel-94cb5c9ec679eac92 fusion-toggle-no-divider fusion-toggle-boxed-mode">
-                              <div className="panel-heading">
-                                <h3 className="panel-title toggle fusion-responsive-typography-calculated" id="toggle_94cb5c9ec679eac92" data-fontsize="18" data-lineheight="21.6px" style={{fontSize: '18', lineHeight: '1.2'}}>
-                                  <a  className={isOpen3 ? "active" : "collapsed"}
-                                    aria-expanded={isOpen3 ? "false" : "true"}
-                                    aria-controls="94cb5c9ec679eac92"
-                                     
-                                     role="button" data-toggle="collapse" data-parent="#accordion-497-2" data-target="#94cb5c9ec679eac92" href="#94cb5c9ec679eac92"
-                                     onClick={e => {
-                                      e.preventDefault();
-                                    toggleAccordion3();
-                                    }}
-                                     >
-                                    <span className="fusion-toggle-icon-wrapper" aria-hidden="true">
-                                    <KeyboardArrowDownRoundedIcon  className="fa-fusion-box active-icon fa-angle-down fas" />
-                                       <KeyboardArrowRightRoundedIcon  className="fa-fusion-box inactive-icon fa-angle-right fas" />
-                                     
-                                    </span>
-                                    <span className="fusion-toggle-heading">What experience does TPGROUP have?</span>
-                                  </a>
-                                </h3>
-                              </div>
-                              <div id="94cb5c9ec679eac92" className={`panel-collapse collapse${isOpen3 ? " in" : " "}`} aria-labelledby="toggle_94cb5c9ec679eac92">
+                              
+                              <div id="94cb5c9ec679eac92" className={`panel-collapse collapse in`} aria-labelledby="toggle_94cb5c9ec679eac92">
                                 <div className="panel-body toggle-content fusion-clearfix">
                                   <p>✓ The best time to copy for long-term performance is 6 months to 1 year, to achieve the most effective profits. That is the mindset of an investor, and it is the most correct mindset.</p>
                                   <p>✓ Allocate your capital according to your personal investment style. You can choose different strategies to copy, but never put all your capital into a single strategy.</p>
@@ -404,32 +336,7 @@ export default function Home() {
                       </div>
                       </div>
                     </div>
-                    <div className="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-8 fusion_builder_column_inner_1_2 1_2 fusion-flex-column"
-                    style={{
-        "--awb-bg-size": "cover",
-        "--awb-width-large": "50%",
-        "--awb-margin-top-large": "0px",
-        "--awb-spacing-right-large": "3.84%",
-        "--awb-margin-bottom-large": "20px",
-        "--awb-spacing-left-large": "3.84%",
-        "--awb-width-medium": "50%",
-        "--awb-order-medium": 0,
-        "--awb-spacing-right-medium": "3.84%",
-        "--awb-spacing-left-medium": "3.84%",
-        "--awb-width-small": "100%",
-        "--awb-order-small": 0,
-        "--awb-spacing-right-small": "1.92%",
-        "--awb-spacing-left-small": "1.92%"
-        } as React.CSSProperties}
-                    >
-                      <div className="fusion-column-wrapper fusion-column-has-shadow fusion-flex-justify-content-flex-start fusion-content-layout-column">
-                        <div className="fusion-image-element " >
-                          <span className=" fusion-imageframe imageframe-none imageframe-8 hover-type-none">
-                            <Image decoding="async" width={500} height={423} alt="Tìm hiểu về Backcom.trade" title="backcom-answer" src="https://backcom.trade/wp-content/uploads/2025/03/backcom-answer.png" data-orig-src="https://backcom.trade/wp-content/uploads/2025/03/backcom-answer.png" className="Image-responsive wp-image-778 lazyautosizes lazyloaded" data-srcset="https://backcom.trade/wp-content/uploads/2025/03/backcom-answer-200x169.png.webp 200w, https://backcom.trade/wp-content/uploads/2025/03/backcom-answer-400x338.png.webp 400w, https://backcom.trade/wp-content/uploads/2025/03/backcom-answer.png.webp 500w" data-sizes="auto" data-orig-sizes="(max-width: 640px) 100vw, 500px" sizes="500px"/>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
+               
                   </div>
                 </div>
               </div>
@@ -450,12 +357,12 @@ export default function Home() {
                     <h2 className="fusion-title-heading title-heading-center fusion-responsive-typography-calculated" style={{ margin: 0, "--fontSize": 36, lineHeight: "var(--awb-typography1-line-height)" } as React.CSSProperties}>Start</h2>
                   </div>
                   <div className="fusion-text fusion-text-2" style={{ "--awb-content-alignment": "center", "--awb-font-size": "18px", "--awb-text-color": "#ffffff" } as React.CSSProperties}>
-                    <p>Click button <span style={{ color: "#facc15" }}>Register</span>
+                    <p>Click button <span style={{ color: "#facc15" }}>Start copying</span>
                     </p>
                   </div>
                 
                   <div className="fusion-title title fusion-title-6 fusion-sep-none fusion-title-text fusion-title-size-three" style={{ "--awb-text-color": "var(--awb-color1)" } as React.CSSProperties}>
-                    <h3 className="fusion-title-heading title-heading-left fusion-responsive-typography-calculated" style={{ margin: 0, "--fontSize": 24, lineHeight: "var(--awb-typography1-line-height)" } as React.CSSProperties}>Crypto</h3>
+                    <h3 className="fusion-title-heading title-heading-left fusion-responsive-typography-calculated" style={{ margin: 0, "--fontSize": 24, lineHeight: "var(--awb-typography1-line-height)" } as React.CSSProperties}>Exness</h3>
                   </div>
                   <div className="fusion-builder-row fusion-builder-row-inner fusion-row fusion-flex-align-items-flex-start fusion-flex-content-wrap" style={{ width: "104% !important", maxWidth: "104% !important", marginLeft: "calc(-4% / 2 )", marginRight: "calc(-4% / 2 )" } as React.CSSProperties}>
               
@@ -464,8 +371,37 @@ export default function Home() {
                     <div  className="fusion-layout-column fusion_builder_column_inner fusion-builder-nested-column-2 fusion_builder_column_inner_1_3 1_3 fusion-flex-column" style={{ "--awb-padding-right": "20px", "--awb-padding-bottom": "20px", "--awb-padding-left": "20px", "--awb-overflow": "hidden", "--awb-bg-color": "var(--awb-color6)", "--awb-bg-color-hover": "var(--awb-color6)", "--awb-bg-size": "cover", "--awb-border-color": "var(--awb-color7)", "--awb-border-top": "1px", "--awb-border-right": "1px", "--awb-border-bottom": "1px", "--awb-border-left": "1px", "--awb-border-style": "solid", "--awb-border-radius": "20px 20px 20px 20px", "--awb-width-large": "33.333333333333%", "--awb-margin-top-large": "0px", "--awb-spacing-right-large": "5.76%", "--awb-margin-bottom-large": "20px", "--awb-spacing-left-large": "5.76%", "--awb-width-medium": "33.333333333333%", "--awb-order-medium": 0, "--awb-spacing-right-medium": "5.76%", "--awb-spacing-left-medium": "5.76%", "--awb-width-small": "100%", "--awb-order-small": 0, "--awb-spacing-right-small": "1.92%", "--awb-spacing-left-small": "1.92%" } as React.CSSProperties}>
                       <div style={{paddingTop:'10px',backgroundColor: "#1e2329"}} className="fusion-column-wrapper fusion-column-has-shadow fusion-flex-justify-content-flex-start fusion-content-layout-column">
                                <div className="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root hLanG css-bovk7b" data-auto="strategy_detail_card">
-  
-                               <div className="gs5fU gBc_5" style={{borderRadius:'10px'}}>
+  {isMobile ? (
+     <div className="gs5fU gBc_5" style={{borderRadius:'10px'}}>
+                               <Dialog>
+  <DialogTrigger> <Image 
+       src="/picmobile01.png"  
+       width={500}
+       height={100}
+       alt="Photo"
+        data-auto="strategy_image" className=""/></DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+    <VisuallyHidden.Root>
+    <DialogTitle></DialogTitle>
+    </VisuallyHidden.Root>
+     
+      <DialogDescription >
+      <Image 
+       src="/picmobile01.png"  
+       width={500}
+       height={500}
+       style={{width:"-webkit-fill-available"}}
+       alt="Photo"
+        data-auto="strategy_image" className=""/>
+      </DialogDescription>
+    </DialogHeader>
+  </DialogContent>
+</Dialog>
+      
+     </div>
+  ):(
+ <div className="gs5fU gBc_5" style={{borderRadius:'10px'}}>
                                <Dialog>
   <DialogTrigger> <Image 
        src="/image01.jpg"  
@@ -493,6 +429,8 @@ export default function Home() {
 </Dialog>
       
      </div>
+  )}
+                              
 </div>
                         <div className="fusion-title title fusion-title-7 fusion-sep-none fusion-title-center fusion-title-text fusion-title-size-three" style={{ "--awb-text-color": "var(--awb-color1)" } as React.CSSProperties}>
                           <h3 className="fusion-title-heading title-heading-center fusion-responsive-typography-calculated" style={{ margin: 0, "--fontSize": 24, lineHeight: "var(--awb-typography1-line-height)" } as React.CSSProperties}>Exness - TPGROUP___</h3>
@@ -535,7 +473,7 @@ export default function Home() {
                             rel="noopener noreferrer sponsored"
                             href="https://www.social-trading.club/strategy/110271215"
                           >
-                            <span className="fusion-button-text">Register</span>
+                            <span className="fusion-button-text">Start copying</span>
                           </a>
                         </div>
                       </div>
@@ -622,7 +560,7 @@ export default function Home() {
                             rel="noopener noreferrer sponsored"
                             href="https://social-trading.exness.com/strategy/110268597"
                           >
-                            <span className="fusion-button-text">Register</span>
+                            <span className="fusion-button-text">Start copying</span>
                           </a>
                         </div>
                       </div>
@@ -709,7 +647,7 @@ export default function Home() {
                             rel="noopener noreferrer sponsored"
                             href="https://social-trading.exness.com/strategy/110287824"
                           >
-                            <span className="fusion-button-text">Register</span>
+                            <span className="fusion-button-text">Start copying</span>
                           </a>
                         </div>
                       </div>
@@ -799,7 +737,7 @@ export default function Home() {
                             rel="noopener noreferrer sponsored"
                             href="https://social-trading.exness.com/strategy/110290080"
                           >
-                            <span className="fusion-button-text">Register</span>
+                            <span className="fusion-button-text">Start copying</span>
                           </a>
                         </div>
                       </div>
@@ -886,7 +824,7 @@ export default function Home() {
                             rel="noopener noreferrer sponsored"
                             href="https://social-trading.exness.com/strategy/110271185"
                           >
-                            <span className="fusion-button-text">Register</span>
+                            <span className="fusion-button-text">Start copying</span>
                           </a>
                         </div>
                       </div>
