@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   title: "TP GROUP",
   description: "TPGROUP makes trading simple, as Investors can copy trades made by experienced traders while both earn from profitable trades",
   icons: {
-    icon: "/icon.png",
-    apple: "/apple-touch-icon.png",
-    shortcut: "icon.png",
+    icon: "/icon.ico",
+    apple: "/icon.ico",
+    shortcut: "icon.ico",
   }
   
     
