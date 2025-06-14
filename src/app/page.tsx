@@ -185,8 +185,8 @@ export default function Home() {
                                   <p>
                                     Every trade carries risk, so we trade each strategy separately and do not copy trades from multiple strategies at the same time.
                                   </p>
-                                    <p>🚨 Financial investment always carries risks, including the possibility of losing your invested capital. If anyone tells you that financial investment is completely safe, that is a blatant lie.</p>
-                                  <p>✅ Connect with TPGROUP today and: <br /> ✓ Allocate your capital wisely according to your personal finances and only copy with money you can afford to lose. <br /> ✓ Consider the risks before considering the profits. </p>
+                                    <p> Financial investment always carries risks, including the possibility of losing your invested capital. If anyone tells you that financial investment is completely safe, that is a blatant lie.</p>
+                                  <p>Connect with TPGROUP today and: <br /> ✓ Allocate your capital wisely according to your personal finances and only copy with money you can afford to lose. <br /> ✓ Consider the risks before considering the profits. </p>
                                 </div>
                               </div>
                             </div>

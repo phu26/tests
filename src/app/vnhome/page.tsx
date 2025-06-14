@@ -181,8 +181,8 @@ export default function Home() {
                               <div id="ffbc17330913c97ce" className={`panel-collapse collapse in`} aria-labelledby="toggle_ffbc17330913c97ce">
                                 <div className="panel-body toggle-content fusion-clearfix">
                                   <p> Mỗi giao dịch đều có rủi ro, vì vậy chúng tôi  giao dịch từng chiến lược riêng biệt, không sao chép giao dịch các chiến lược cùng lúc với nhau</p>
-                                  <p>🚨 Đầu tư tài chính luôn có rủi ro, thậm chí mất số tiền đầu tư; Nếu ai đó nói rằng bạn an toàn khi đầu tư tài chính, đó là một lời nói dối trắng trợn. </p>
-                                  <p>✅ Kết nối với TTPGROUP ngay hôm nay vàvà: <br /> ✓ Phân bổ vốn hợp lý với tài chính cá nhân và chỉ sao chép với số tiền bạn có thể để mất. <br /> ✓ Cân nhắc rủi ro trước khi cân nhắc lợi nhuận.   </p>
+                                  <p> Đầu tư tài chính luôn có rủi ro, thậm chí mất số tiền đầu tư; Nếu ai đó nói rằng bạn an toàn khi đầu tư tài chính, đó là một lời nói dối trắng trợn. </p>
+                                  <p> Kết nối với TTPGROUP ngay hôm nay vàvà: <br /> ✓ Phân bổ vốn hợp lý với tài chính cá nhân và chỉ sao chép với số tiền bạn có thể để mất. <br /> ✓ Cân nhắc rủi ro trước khi cân nhắc lợi nhuận.   </p>
                                 </div>
                               </div>
                             </div>
