@@ -17,13 +17,13 @@ on:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-           script:
+          script: |
              cd /var/www/tpgroup.net
              git fetch origin
              git checkout production
              git pull 
              npm install
-            npm run build
+             npm run build
              pm2 reload tpgroup  
             
              
