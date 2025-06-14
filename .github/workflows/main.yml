@@ -13,16 +13,17 @@ on:
       - name: Deploy using ssh
         user: appleboy/ssh-action@master
         with:
-          host: ${{secrets.HOST}}
-          username: ${{secrets.USERNAME}}
-          password: ${{secrets.PASSWORD}}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
           port: 22
-           script: 
+           script: |
              cd /var/www/tpgroup.net
              git fetch origin
              git checkout production
              git pull 
              npm install
+            npm run build
              pm2 reload tpgroup  
-             npm run build
+            
              
